@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title desc">
+  <title id="title">Guru Hebat</title>
+  <desc id="desc">Ilustrasi guru berhijab pink.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffe4ef"/>
+      <stop offset="1" stop-color="#ffc3d9"/>
+    </linearGradient>
+  </defs>
+  <circle cx="90" cy="90" r="88" fill="url(#bg)"/>
+  <path d="M40 143c9-35 22-50 50-50s41 15 50 50c-22 23-78 23-100 0z" fill="#f48ab4"/>
+  <path d="M46 98c2-43 22-70 48-70 31 0 50 31 42 77-3 23-16 44-44 44-32 0-48-24-46-51z" fill="#e96e9f"/>
+  <path d="M61 91c0-25 13-43 31-43s31 18 31 43c0 31-14 45-31 45S61 122 61 91z" fill="#ffd8c8"/>
+  <path d="M61 91c12-1 33-11 45-29 10 14 14 23 17 32-1-29-14-48-31-48-19 0-31 20-31 45z" fill="#f8a2c1"/>
+  <circle cx="78" cy="96" r="4" fill="#6d3c48"/>
+  <circle cx="106" cy="96" r="4" fill="#6d3c48"/>
+  <path d="M80 118c8 8 17 8 25 0" fill="none" stroke="#bd5879" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="54" cy="113" r="9" fill="#ffbad2" opacity=".8"/>
+  <circle cx="128" cy="113" r="9" fill="#ffbad2" opacity=".8"/>
+  <path d="M48 40c12-18 28-28 49-25 31 4 53 31 54 68-10-33-26-52-54-56-22-3-38 4-49 13z" fill="#fff4fa" opacity=".65"/>
+</svg>

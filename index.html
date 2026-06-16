@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Devisi Kelas Buel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Menu utama">
+        <button class="menu-title" type="button" data-action="menu">
+          <span class="bow">&#10047;</span>
+          <span>Menu Utama</span>
+          <span class="arrow">&#8250;</span>
+        </button>
+
+        <nav class="side-nav" aria-label="Navigasi">
+          <button class="nav-item active" type="button" data-section="dashboard">
+            <span>&#8962;</span> Dashboard
+          </button>
+          <button class="nav-item" type="button" data-section="guru">
+            <span>&#128105;</span> Data Guru
+          </button>
+          <button class="nav-item" type="button" data-section="siswa">
+            <span>&#128101;</span> Data Siswa
+          </button>
+          <button class="nav-item" type="button" data-section="absensi">
+            <span>&#10003;</span> Absensi Siswa
+          </button>
+          <button class="nav-item" type="button" data-section="jurnal">
+            <span>&#128214;</span> Jurnal Mengajar
+          </button>
+          <button class="nav-item" type="button" data-section="modul">
+            <span>&#128193;</span> Modul Ajar
+          </button>
+          <button class="nav-item" type="button" data-section="asesmen">
+            <span>&#128203;</span> Asesmen
+          </button>
+          <button class="nav-item" type="button" data-section="perangkat">
+            <span>&#128218;</span> Perangkat Ajar
+          </button>
+          <button class="nav-item" type="button" data-section="galeri">
+            <span>&#128247;</span> Galeri Media
+          </button>
+          <button class="nav-item" type="button" data-section="catatan">
+            <span>&#128221;</span> Catatan Wali Kelas
+          </button>
+          <button class="nav-item" type="button" data-section="laporan">
+            <span>&#128196;</span> Laporan
+          </button>
+          <button class="nav-item" type="button" data-section="kalender">
+            <span>&#128197;</span> Kalender Kegiatan
+          </button>
+          <button class="nav-item" type="button" data-section="pengaturan">
+            <span>&#9881;</span> Pengaturan
+          </button>
+          <button class="nav-item" type="button" data-section="bantuan">
+            <span>?</span> Bantuan
+          </button>
+        </nav>
+
+        <div class="teacher-card">
+          <div class="teacher-art" aria-hidden="true">
+            <span class="bear-face">B</span>
+          </div>
+          <strong>Guru Hebat</strong>
+          <small>Mencetak Generasi Hebat</small>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="hero" id="dashboard">
+          <div class="logo-wrap">
+            <img src="assets/logo-kelas-buel.jpeg" alt="Logo Kelas Buel" />
+            <span>SD Islam Al Falah</span>
+          </div>
+          <div class="hero-copy">
+            <h1>DEVISI KELAS BUEL</h1>
+            <p>Sistem Administrasi Guru Super Lengkap</p>
+            <strong>"Satu Aplikasi, Semua Administrasi Guru Jadi Mudah & Menyenangkan"</strong>
+          </div>
+          <button class="welcome-card" type="button" data-action="profile">
+            <span>
+              <strong>Hai, Guru Hebat!</strong>
+              <small>Selamat datang kembali</small>
+            </span>
+            <img src="assets/profil-buel.jpeg" alt="Foto profil Buel" />
+          </button>
+        </header>
+
+        <section class="stats-grid" aria-label="Ringkasan dashboard">
+          <button class="stat-card" type="button" data-action="edit-student-count" data-title="Jumlah Siswa">
+            <span class="stat-icon people">&#128101;</span>
+            <small>Jumlah Siswa</small>
+            <strong id="studentCountStat">128</strong>
+            <em>Siswa Aktif</em>
+          </button>
+          <button class="stat-card" type="button" data-action="open-list" data-title="Perangkat Ajar">
+            <span class="stat-icon book">&#128218;</span>
+            <small>Perangkat Ajar</small>
+            <strong>52</strong>
+            <em>Dokumen</em>
+          </button>
+          <button class="stat-card" type="button" data-action="open-list" data-title="Absensi Hari Ini">
+            <span class="stat-icon check">&#9745;</span>
+            <small>Absensi Hari Ini</small>
+            <strong>28</strong>
+            <em>Hadir</em>
+          </button>
+          <button class="stat-card" type="button" data-action="school-year">
+            <span class="stat-icon year">&#128198;</span>
+            <small>Tahun Ajaran</small>
+            <strong>2024/2025</strong>
+            <em>Semester Genap</em>
+          </button>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel profile-panel" id="guru">
+            <div class="panel-head split">
+              <h2><span>&#128105;</span> Data Guru</h2>
+              <button class="link-button" type="button" data-action="edit-profile">Edit Data</button>
+            </div>
+            <div class="profile-layout" id="profileView">
+              <img src="assets/profil-buel.jpeg" alt="Foto profil Buel" />
+              <dl id="profileData"></dl>
+            </div>
+            <button class="pink-button" type="button" data-action="profile">Lihat Profil Lengkap</button>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head split">
+              <h2><span>&#128226;</span> Pengumuman</h2>
+              <div class="head-actions">
+                <button class="link-button" type="button" data-action="add-item" data-list="announcements">Tambah</button>
+                <button class="link-button" type="button" data-action="see-all" data-title="Pengumuman">Lihat Semua</button>
+              </div>
+            </div>
+            <div class="list-lines" id="announcementList"></div>
+          </article>
+
+          <article class="panel" id="kalender">
+            <div class="panel-head">
+              <h2><span>&#128197;</span> Kalender Kegiatan</h2>
+            </div>
+            <div class="calendar-top">
+              <button class="round-btn" type="button" data-calendar="prev" aria-label="Bulan sebelumnya">&#8249;</button>
+              <strong id="calendarTitle">Juni 2025</strong>
+              <button class="round-btn" type="button" data-calendar="next" aria-label="Bulan berikutnya">&#8250;</button>
+            </div>
+            <div class="mini-calendar" id="mainCalendar"></div>
+            <div class="event-lines" id="eventLines">
+              <button type="button" data-action="event" data-title="Rapat Guru Bulanan"><strong>20 Juni</strong><span>Rapat Guru Bulanan</span></button>
+              <button type="button" data-action="event" data-title="Pengumpulan Perangkat Ajar"><strong>25 Juni</strong><span>Pengumpulan Perangkat Ajar</span></button>
+              <button type="button" data-action="event" data-title="Penilaian Akhir Semester"><strong>01 Juli</strong><span>Penilaian Akhir Semester</span></button>
+            </div>
+            <button class="pink-button" type="button" data-action="calendar-detail">Lihat Kalender Lengkap</button>
+          </article>
+
+          <article class="panel" id="absensi">
+            <div class="panel-head split">
+              <h2><span>&#9734;</span> Absensi Hari Ini</h2>
+              <button class="link-button" type="button" data-action="edit-attendance">Edit</button>
+            </div>
+            <div class="donut-wrap">
+              <div class="donut" id="attendanceDonut"><span>Total<br /><strong>28</strong><br />Siswa</span></div>
+              <div class="legend" id="attendanceLegend"></div>
+            </div>
+            <button class="pink-button" type="button" data-action="attendance-detail">Lihat Detail Absensi</button>
+          </article>
+
+          <article class="panel" id="laporan">
+            <div class="panel-head split">
+              <h2><span>&#8962;</span> Grafik Kehadiran</h2>
+              <select id="chartRange" aria-label="Pilih rentang grafik">
+                <option>Bulan Ini</option>
+                <option>Minggu Ini</option>
+                <option>Semester Ini</option>
+              </select>
+            </div>
+            <div class="chart" aria-label="Grafik kehadiran">
+              <svg viewBox="0 0 320 180" role="img">
+                <defs>
+                  <linearGradient id="pinkFill" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0" stop-color="#ff7daf" stop-opacity="0.45" />
+                    <stop offset="1" stop-color="#ff7daf" stop-opacity="0.04" />
+                  </linearGradient>
+                </defs>
+                <path d="M32 148 L32 60 L92 48 L152 54 L212 42 L272 58 L272 148 Z" fill="url(#pinkFill)" />
+                <polyline points="32,60 92,48 152,54 212,42 272,58" fill="none" stroke="#ec5f99" stroke-width="4" />
+                <g fill="#fff" stroke="#ec5f99" stroke-width="3">
+                  <circle cx="32" cy="60" r="6" /><circle cx="92" cy="48" r="6" /><circle cx="152" cy="54" r="6" />
+                  <circle cx="212" cy="42" r="6" /><circle cx="272" cy="58" r="6" />
+                </g>
+                <g fill="#b24570" font-size="13" font-weight="700">
+                  <text x="20" y="45">85%</text><text x="80" y="33">90%</text><text x="140" y="39">88%</text>
+                  <text x="200" y="27">92%</text><text x="260" y="43">87%</text>
+                </g>
+                <g fill="#8a6d77" font-size="12">
+                  <text x="14" y="170">Minggu 1</text><text x="75" y="170">Minggu 2</text><text x="137" y="170">Minggu 3</text>
+                  <text x="199" y="170">Minggu 4</text><text x="260" y="170">Minggu 5</text>
+                </g>
+              </svg>
+            </div>
+            <button class="pink-button" type="button" data-action="download-report">Lihat Laporan Lengkap</button>
+          </article>
+        </section>
+
+        <section class="panel quick-panel" id="akses-cepat">
+          <div class="panel-head split">
+            <h2><span>&#11088;</span> Akses Cepat</h2>
+            <button class="link-button" type="button" data-action="add-item" data-list="quickItems">Tambah</button>
+          </div>
+          <div class="quick-grid" id="quickGrid"></div>
+        </section>
+
+        <section class="bottom-grid">
+          <article class="panel" id="modul">
+            <div class="panel-head split">
+              <h2><span>&#11088;</span> Dokumen Terbaru</h2>
+              <div class="head-actions">
+                <button class="link-button" type="button" data-action="add-item" data-list="docs">Tambah</button>
+                <button class="link-button" type="button" data-action="see-all" data-title="Dokumen Terbaru">Lihat Semua</button>
+              </div>
+            </div>
+            <div class="docs-list" id="docsList"></div>
+          </article>
+
+          <article class="panel sticky-note" id="catatan">
+            <div class="panel-head">
+              <h2><span>&#11088;</span> Catatan Cepat</h2>
+            </div>
+            <form id="noteForm">
+              <textarea id="noteText" rows="6">Jangan lupa cek absensi dan upload modul ajar ya</textarea>
+              <button class="pink-button" type="submit">Simpan Catatan</button>
+            </form>
+          </article>
+
+          <article class="panel" id="jurnal">
+            <div class="panel-head split">
+              <h2><span>&#128226;</span> Kegiatan Terbaru</h2>
+              <div class="head-actions">
+                <button class="link-button" type="button" data-action="add-item" data-list="activities">Tambah</button>
+                <button class="link-button" type="button" data-action="see-all" data-title="Kegiatan Terbaru">Lihat Semua</button>
+              </div>
+            </div>
+            <div class="activity-list" id="activityList"></div>
+          </article>
+
+          <article class="panel mini-panel">
+            <div class="panel-head">
+              <h2>Kalender Mini</h2>
+            </div>
+            <div class="calendar-top">
+              <button class="round-btn" type="button" data-calendar="prev" aria-label="Bulan sebelumnya">&#8249;</button>
+              <strong id="miniCalendarTitle">Juni 2025</strong>
+              <button class="round-btn" type="button" data-calendar="next" aria-label="Bulan berikutnya">&#8250;</button>
+            </div>
+            <div class="mini-calendar compact" id="miniCalendar"></div>
+          </article>
+        </section>
+
+        <footer class="footer">
+          <strong>&#9825; Dengan Hati, Mengabdi untuk Negeri &#9825;</strong>
+          <span>&copy; 2025 Devisi Kelas Buel - SD Islam Al Falah</span>
+        </footer>
+      </main>
+    </div>
+
+    <dialog id="modal">
+      <div class="modal-card">
+        <button class="modal-close" type="button" data-close aria-label="Tutup">&times;</button>
+        <h2 id="modalTitle">Detail</h2>
+        <div id="modalBody"></div>
+      </div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
